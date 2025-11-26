@@ -31,7 +31,9 @@ RUN pip3 install \
 
 RUN pip3 install \
     "huggingface_hub<0.25.0" \
-    "numpy<2.0"
+    "numpy<2.0" \
+    "transformers==4.36.2" \
+    "accelerate==0.25.0"
 
 COPY . /streamdiffusion
 WORKDIR /streamdiffusion
