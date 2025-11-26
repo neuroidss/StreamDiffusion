@@ -29,6 +29,9 @@ RUN pip3 install \
     xformers \
     --index-url https://download.pytorch.org/whl/cu118
 
+RUN pip3 install \
+    "huggingface_hub<0.25.0"
+
 COPY . /streamdiffusion
 WORKDIR /streamdiffusion
 
