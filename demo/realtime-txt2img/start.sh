@@ -1,6 +1,7 @@
 #!/bin/bash
 cd frontend
 pnpm install
+npm install --save-dev typescript@latest
 pnpm run build
 if [ $? -eq 0 ]; then
     echo -e "\033[1;32m\nfrontend build success \033[0m"
